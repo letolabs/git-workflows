@@ -49,4 +49,9 @@ To save disk space, run the Git garbage collector:
 If you want to save even more disk space and you are patient, run it aggressively:
 
     git gc --aggressive
-    
+
+Another way to save disk space is to remove certain files that are not needed in the working copy using a "post-checkout"
+Git hook. Here is an [example](https://github.com/scouttyg/rollbackoncheckout/blob/master/post-checkout) post-checkout hook.
+
+
+
