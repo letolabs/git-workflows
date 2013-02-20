@@ -22,7 +22,7 @@ If you want to update to the latest commit on master branch of the remote "origi
 
     git checkout origin/master # detached HEAD
 
-## Options
+### Options
 
 You could use use --depth in your clone statement:
 
@@ -40,4 +40,13 @@ but allowing untracked files (like temp files/etc) :
 
     git status -s|grep -v '\?'| wc -l
     
+### Saving Disk Space
+
+To save disk space, run the Git garbage collector:
+
+    git gc
+    
+If you want to save even more disk space and you are patient, run it aggressively:
+
+    git gc --aggressive
     
